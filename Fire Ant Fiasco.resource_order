@@ -23,5 +23,6 @@
     {"name":"bug_damage_right","order":5,"path":"sprites/bug_damage_right/bug_damage_right.yy",},
     {"name":"bug_damage_left","order":4,"path":"sprites/bug_damage_left/bug_damage_left.yy",},
     {"name":"ant_idle","order":7,"path":"sprites/ant_idle/ant_idle.yy",},
+    {"name":"Sprite8","order":1,"path":"sprites/Sprite8/Sprite8.yy",},
   ],
 }
