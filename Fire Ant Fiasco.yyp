@@ -33,9 +33,14 @@
     "IDEVersion": "2023.2.0.71",
   },
   "resources": [
-    {"id":{"name":"obj_bug","path":"objects/obj_bug/obj_bug.yy",},},
+    {"id":{"name":"ant_walk","path":"sprites/ant_walk/ant_walk.yy",},},
+    {"id":{"name":"bug_walk_left","path":"sprites/bug_walk_left/bug_walk_left.yy",},},
+    {"id":{"name":"bug_walk_right","path":"sprites/bug_walk_right/bug_walk_right.yy",},},
     {"id":{"name":"bug_idle","path":"sprites/bug_idle/bug_idle.yy",},},
-    {"id":{"name":"bug_walk","path":"sprites/bug_walk/bug_walk.yy",},},
+    {"id":{"name":"bug_damage_right","path":"sprites/bug_damage_right/bug_damage_right.yy",},},
+    {"id":{"name":"bug_damage_left","path":"sprites/bug_damage_left/bug_damage_left.yy",},},
+    {"id":{"name":"ant_idle","path":"sprites/ant_idle/ant_idle.yy",},},
+    {"id":{"name":"obj_ant","path":"objects/obj_ant/obj_ant.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
