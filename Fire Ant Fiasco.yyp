@@ -35,6 +35,7 @@
   "resources": [
     {"id":{"name":"ant_walk","path":"sprites/ant_walk/ant_walk.yy",},},
     {"id":{"name":"bug_walk_left","path":"sprites/bug_walk_left/bug_walk_left.yy",},},
+    {"id":{"name":"bug_idle_left","path":"sprites/bug_idle_left/bug_idle_left.yy",},},
     {"id":{"name":"bug_walk_right","path":"sprites/bug_walk_right/bug_walk_right.yy",},},
     {"id":{"name":"bug_idle","path":"sprites/bug_idle/bug_idle.yy",},},
     {"id":{"name":"bug_damage_right","path":"sprites/bug_damage_right/bug_damage_right.yy",},},

@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "ant_walk",
+    "path": "sprites/ant_walk/ant_walk.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
