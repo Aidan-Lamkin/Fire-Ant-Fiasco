@@ -16,6 +16,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"obj_ground","order":3,"path":"objects/obj_ground/obj_ground.yy",},
     {"name":"ant_walk","order":6,"path":"sprites/ant_walk/ant_walk.yy",},
     {"name":"bug_walk_left","order":3,"path":"sprites/bug_walk_left/bug_walk_left.yy",},
     {"name":"bug_idle_left","order":8,"path":"sprites/bug_idle_left/bug_idle_left.yy",},
@@ -26,6 +27,7 @@
     {"name":"bug_damage_left","order":4,"path":"sprites/bug_damage_left/bug_damage_left.yy",},
     {"name":"obj_melee_attack","order":2,"path":"objects/obj_melee_attack/obj_melee_attack.yy",},
     {"name":"ant_idle","order":7,"path":"sprites/ant_idle/ant_idle.yy",},
+    {"name":"Sprite10","order":9,"path":"sprites/Sprite10/Sprite10.yy",},
     {"name":"Sprite8","order":1,"path":"sprites/Sprite8/Sprite8.yy",},
   ],
 }
