@@ -19,7 +19,7 @@
         0,
         0,
         0,
-        0,
+        121,
       ],},
   ],
   "macroPageTiles": {
@@ -43,7 +43,7 @@
     "name": "Default",
     "path": "texturegroups/Default",
   },
-  "tile_count": 9,
+  "tile_count": 10,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -55,15 +55,16 @@
       6,
       7,
       8,
+      9,
     ],
     "SerialiseFrameCount": 1,
   },
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
-  "tileHeight": 32,
+  "tileHeight": 64,
   "tilehsep": 0,
   "tilevsep": 0,
-  "tileWidth": 32,
+  "tileWidth": 64,
   "tilexoff": 0,
   "tileyoff": 0,
 }
