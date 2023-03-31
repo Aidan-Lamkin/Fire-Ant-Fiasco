@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "ant_walk",
-    "path": "sprites/ant_walk/ant_walk.yy",
+    "name": "ant_walk_left",
+    "path": "sprites/ant_walk_left/ant_walk_left.yy",
   },
   "spriteMaskId": null,
   "visible": true,

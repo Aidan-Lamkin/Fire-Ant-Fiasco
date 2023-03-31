@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "ant_idle",
+  "name": "ant_idle_right",
   "bbox_bottom": 38,
-  "bbox_left": 3,
-  "bbox_right": 57,
+  "bbox_left": 4,
+  "bbox_right": 58,
   "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "ant_idle",
+    "name": "ant_idle_right",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"091e589e-aa4d-4776-8750-9229ff1ebaf7","path":"sprites/ant_idle/ant_idle.yy",},},},"Disabled":false,"id":"2a149ea5-93f7-4b17-94e5-2ec1fb4a95b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"091e589e-aa4d-4776-8750-9229ff1ebaf7","path":"sprites/ant_idle_right/ant_idle_right.yy",},},},"Disabled":false,"id":"4f04857b-7cd2-407e-99f6-5a565acdbbb8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

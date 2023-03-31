@@ -19,8 +19,53 @@ if(place_meeting(x,y+vsp, obj_ground)) {
 	grounded = true
 }else{
 	grounded = false
-	alarm[0] = 0.1*room_speed
 }
+
+if(!place_meeting(x+hsp,y-5,obj_ground)) {
+	if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
+		if(grounded){
+			sprite_index = bug_walk_left
+		}
+		dir = -1
+		hsp = dir * spd
+	}else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
+		if(grounded){
+			sprite_index = bug_walk_right
+		}
+		dir = 1
+		hsp = dir*spd
+	}else{
+		if(dir > 0){
+			sprite_index = bug_idle
+		} else {
+			sprite_index = bug_idle_left
+		}
+		hsp = 0
+	}
+}else if (dir > 0){
+	if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
+		if(grounded){
+			sprite_index = bug_walk_left
+		}
+		dir = -1
+		hsp = dir * spd
+	}else{
+		sprite_index = bug_idle
+		hsp = 0
+	}
+} else {
+	if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
+		if(grounded){
+			sprite_index = bug_walk_right
+		}
+		dir = 1
+		hsp = dir*spd
+	}else{
+		sprite_index = bug_idle_left
+		hsp = 0
+	}
+}
+
 
 if ((curr_jumps < max_jumps) && jumping) {
 	if(curr_jumps == 1){
@@ -38,7 +83,6 @@ if ((curr_jumps < max_jumps) && jumping) {
 		grounded = true;
 	} else {
 		grounded = false;
-		alarm[0] = 0.1*room_speed
 	}
 	
 	
@@ -51,24 +95,7 @@ if ((curr_jumps < max_jumps) && jumping) {
 }
 
 
-if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
-	if(grounded){
-		sprite_index = bug_walk_left
-	}
-	dir = -1
-	x -= hsp
-}else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
-	if(grounded){
-		sprite_index = bug_walk_right
-	}
-	dir = 1
-	x += hsp
-}else{
-	if(dir > 0){
-		sprite_index = bug_idle
-	} else {
-		sprite_index = bug_idle_left
-	}
-	
-}
+
+
 y += vsp
+x += hsp
