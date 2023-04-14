@@ -20,6 +20,7 @@
     {"name":"obj_ground","order":3,"path":"objects/obj_ground/obj_ground.yy",},
     {"name":"ant_walk_left","order":6,"path":"sprites/ant_walk_left/ant_walk_left.yy",},
     {"name":"obj_ant_spawn_animation_right","order":7,"path":"objects/obj_ant_spawn_animation_right/obj_ant_spawn_animation_right.yy",},
+    {"name":"barbra_sword","order":18,"path":"sprites/barbra_sword/barbra_sword.yy",},
     {"name":"bug_walk_left","order":3,"path":"sprites/bug_walk_left/bug_walk_left.yy",},
     {"name":"ant_idle_right","order":14,"path":"sprites/ant_idle_right/ant_idle_right.yy",},
     {"name":"background","order":12,"path":"sprites/background/background.yy",},

@@ -37,6 +37,7 @@
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"ant_walk_left","path":"sprites/ant_walk_left/ant_walk_left.yy",},},
     {"id":{"name":"obj_ant_spawn_animation_right","path":"objects/obj_ant_spawn_animation_right/obj_ant_spawn_animation_right.yy",},},
+    {"id":{"name":"barbra_sword","path":"sprites/barbra_sword/barbra_sword.yy",},},
     {"id":{"name":"bug_walk_left","path":"sprites/bug_walk_left/bug_walk_left.yy",},},
     {"id":{"name":"ant_idle_right","path":"sprites/ant_idle_right/ant_idle_right.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
