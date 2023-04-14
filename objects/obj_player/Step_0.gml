@@ -3,6 +3,10 @@
 
 
 var jumping = keyboard_check_pressed(vk_space);
+var keyup = keyboard_check(ord("W"));
+var keydown = keyboard_check(ord("S"));
+var vmove = keydown - keyup; 
+
 
 //mvment
 if(grounded){
@@ -24,13 +28,25 @@ if(place_meeting(x,y+vsp, obj_ground)) {
 if(!place_meeting(x+hsp,y-5,obj_ground)) {
 	if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
 		if(grounded){
-			sprite_index = bug_walk_left
+			if(holding_sword){
+				sprite_index = bug_walk_left_sword;
+			} else {
+				sprite_index = bug_walk_left
+			}
+			
 		}
 		dir = -1
 		hsp = dir * spd
 	}else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
 		if(grounded){
-			sprite_index = bug_walk_right
+			if(holding_sword){
+				 
+				sprite_index = bug_walk_right_sword;
+				
+				
+			} else {
+				sprite_index = bug_walk_right
+			}
 		}
 		dir = 1
 		hsp = dir*spd
@@ -94,7 +110,27 @@ if ((curr_jumps < max_jumps) && jumping) {
 	}
 }
 
+// Climbing logic.
+if (place_meeting(x, y+1, obj_ladder)) {
+	if (vmove < 0 || 
+	(vmove == 0 && climbing) || 
+	(vmove > 0 && place_meeting(x, y+sprite_height, obj_ladder))) {
+		climbing = true;
+	} else {
+		climbing = false;
+	}
+} else {
+	climbing = false;
+}
 
+if (climbing) {
+	vsp = vmove * spd;
+	sprite_index = bug_idle;
+}
+
+if(holding_sword){
+	attack = 4; 
+}
 
 
 y += vsp

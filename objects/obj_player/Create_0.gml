@@ -14,3 +14,8 @@ vsp = 0
 grounded = false
 grv = 0.5
 jspd = 10
+
+climbing = false; 
+
+holding_sword = false;
+attack = 2; 
