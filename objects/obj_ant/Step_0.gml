@@ -8,22 +8,28 @@ if(dir > 0){
 }
 
 if(hp <= 0){
-	instance_destroy(self, false)
+	instance_destroy(self, true)
 }
 
+
+
 //walk closer to the player
-if(abs(obj_player.x - x) < 25){
+if(abs(obj_player.x - x) < 25 ){
 	if(dir > 0){
 		sprite_index = ant_idle_right
 	}else {
 		sprite_index = ant_idle_left
 	}
 	hsp = 0
-}else if(obj_player.x > x ){
+}else if(obj_player.x > x){
+
 	dir = 1
+	
 	hsp = spd*dir
 }else if(obj_player.x < x){
+
 	dir = -1
+	
 	hsp = spd*dir
 }
 
@@ -76,6 +82,9 @@ if (place_meeting(x, y + vsp, obj_ground)) {
 	vsp += grv
 }
 
-
+if(hit){
+	hsp = dir*-1*10
+	vsp =-10
+}
 x += hsp
 y+= vsp

@@ -2,5 +2,8 @@
 // You can write your code in this editor
 
 
-hit = true
-alarm[0] = 0.05*room_speed
+
+
+hp -= obj_player.attack
+spd = 2
+hit = false

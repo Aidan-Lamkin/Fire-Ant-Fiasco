@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-hit = true
-alarm[0] = 0.05*room_speed
+effect_create_above(ef_smoke,x,y,10,c_white)

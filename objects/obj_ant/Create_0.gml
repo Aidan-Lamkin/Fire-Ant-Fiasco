@@ -5,11 +5,11 @@ dir = 1;
 grv = 0.5
 vsp = 0
 hsp = 0
-
+hit = false
 
 if(room == Room1){
-	hp = 3
+	hp = 8
 } else {
-	hp = 5
+	hp = 12
 }
 sprite_index = ant_idle_right;
