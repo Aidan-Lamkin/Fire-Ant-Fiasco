@@ -64,7 +64,9 @@
     {"id":{"name":"obj_ant_spawner","path":"objects/obj_ant_spawner/obj_ant_spawner.yy",},},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
     {"id":{"name":"ladder","path":"sprites/ladder/ladder.yy",},},
+    {"id":{"name":"idle_sword_right","path":"sprites/idle_sword_right/idle_sword_right.yy",},},
     {"id":{"name":"trapdoor_closed","path":"sprites/trapdoor_closed/trapdoor_closed.yy",},},
+    {"id":{"name":"idle_sword_left","path":"sprites/idle_sword_left/idle_sword_left.yy",},},
     {"id":{"name":"trapdoor_open","path":"sprites/trapdoor_open/trapdoor_open.yy",},},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
     {"id":{"name":"Splashscreen","path":"rooms/Splashscreen/Splashscreen.yy",},},
@@ -76,10 +78,10 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"SmallRoom1","path":"rooms/SmallRoom1/SmallRoom1.yy",},},
     {"roomId":{"name":"Splashscreen","path":"rooms/Splashscreen/Splashscreen.yy",},},
     {"roomId":{"name":"Introduction","path":"rooms/Introduction/Introduction.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"SmallRoom1","path":"rooms/SmallRoom1/SmallRoom1.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

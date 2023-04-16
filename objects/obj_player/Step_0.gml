@@ -8,6 +8,7 @@ var keydown = keyboard_check(ord("S"));
 var vmove = keydown - keyup; 
 
 
+
 //mvment
 if(grounded){
 	curr_jumps = 0
@@ -52,9 +53,24 @@ if(!place_meeting(x+hsp,y-5,obj_ground)) {
 		hsp = dir*spd
 	}else{
 		if(dir > 0){
-			sprite_index = bug_idle
+			if (holding_sword){
+				sprite_index = idle_sword_right
+				
+			} else {
+			  sprite_index = bug_idle
+				
+			}
+
 		} else {
-			sprite_index = bug_idle_left
+			if (holding_sword){
+				sprite_index = idle_sword_left
+				
+			} else {
+			  sprite_index = bug_idle_left
+				
+			}
+			
+			
 		}
 		hsp = 0
 	}
@@ -66,8 +82,15 @@ if(!place_meeting(x+hsp,y-5,obj_ground)) {
 		dir = -1
 		hsp = dir * spd
 	}else{
-		sprite_index = bug_idle
-		hsp = 0
+		if(holding_sword){
+			sprite_index = idle_sword_left;
+			hsp = 0;
+		} else {
+			sprite_index = bug_idle
+			hsp = 0
+		}
+		
+		
 	}
 } else {
 	if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
@@ -77,8 +100,15 @@ if(!place_meeting(x+hsp,y-5,obj_ground)) {
 		dir = 1
 		hsp = dir*spd
 	}else{
-		sprite_index = bug_idle_left
+		if(holding_sword){
+				sprite_index = idle_sword_right;
+				hsp = 0
+		} else {
+			sprite_index = bug_idle_left
 		hsp = 0
+		}
+		
+		
 	}
 }
 
@@ -131,6 +161,9 @@ if (climbing) {
 if(holding_sword){
 	attack = 4; 
 }
+
+
+
 
 
 y += vsp
