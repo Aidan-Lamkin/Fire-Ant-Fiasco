@@ -188,7 +188,13 @@ if(keyboard_check_pressed(ord("K")) && can_strike){
 	} else if(holding_sword){
 		sprite_index = barbra_sword_attack_left;
 		instance_create_layer(x-(sprite_width/2)+20, y+20, "Instances", obj_melee_attack)
+	}else if(dir > 0){
+		instance_create_layer(x+(sprite_width/2)-20, y+20, "Instances", obj_melee_attack)
+	}else{
+		instance_create_layer(x-(sprite_width/2)+20, y+20, "Instances", obj_melee_attack)
 	}
+
+	
 }
 
 

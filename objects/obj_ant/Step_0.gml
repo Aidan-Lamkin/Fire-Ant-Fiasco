@@ -84,7 +84,7 @@ if (place_meeting(x, y + vsp, obj_ground)) {
 
 if(hit){
 	hsp = dir*-1*10
-	vsp =-10
+	vsp =-3
 }
 x += hsp
 y+= vsp
