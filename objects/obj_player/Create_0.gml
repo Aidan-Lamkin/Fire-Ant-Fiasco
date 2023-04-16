@@ -18,4 +18,6 @@ jspd = 10
 climbing = false; 
 
 holding_sword = false;
+striking = false;
+can_strike = true;
 attack = 2; 

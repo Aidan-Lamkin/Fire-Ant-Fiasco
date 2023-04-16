@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "barbra_sword_attack",
+  "name": "barbra_sword_attack_left",
   "bbox_bottom": 101,
   "bbox_left": 3,
   "bbox_right": 173,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "barbra_sword_attack",
+    "name": "barbra_sword_attack_left",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2676b9f3-40c2-40fa-b6e8-ed2b7ca93648","path":"sprites/barbra_sword_attack/barbra_sword_attack.yy",},},},"Disabled":false,"id":"849c4315-fb55-4b2b-89ba-4fce6b49f168","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2676b9f3-40c2-40fa-b6e8-ed2b7ca93648","path":"sprites/barbra_sword_attack_left/barbra_sword_attack_left.yy",},},},"Disabled":false,"id":"849c4315-fb55-4b2b-89ba-4fce6b49f168","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -14,8 +14,4 @@
 
 */
 
-if (holding_sword) {
-	sprite_index = barbra_sword_attack; 
-	
-}
 
