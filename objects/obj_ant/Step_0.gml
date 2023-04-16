@@ -7,6 +7,10 @@ if(dir > 0){
 	sprite_index = ant_walk_left
 }
 
+if(hp <= 0){
+	instance_destroy(self, false)
+}
+
 //walk closer to the player
 if(abs(obj_player.x - x) < 25){
 	if(dir > 0){

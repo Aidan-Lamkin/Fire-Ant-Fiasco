@@ -53,6 +53,7 @@
     {"name":"idle_sword_left","order":23,"path":"sprites/idle_sword_left/idle_sword_left.yy",},
     {"name":"trapdoor_open","order":11,"path":"sprites/trapdoor_open/trapdoor_open.yy",},
     {"name":"Sprite8","order":1,"path":"sprites/Sprite8/Sprite8.yy",},
+    {"name":"melee","order":27,"path":"sprites/melee/melee.yy",},
     {"name":"Splashscreen","order":2,"path":"rooms/Splashscreen/Splashscreen.yy",},
     {"name":"SmallRoom1","order":1,"path":"rooms/SmallRoom1/SmallRoom1.yy",},
     {"name":"Introduction","order":3,"path":"rooms/Introduction/Introduction.yy",},

@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "melee",
+    "path": "sprites/melee/melee.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
