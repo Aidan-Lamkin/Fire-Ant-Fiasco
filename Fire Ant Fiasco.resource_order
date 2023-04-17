@@ -40,7 +40,6 @@
     {"name":"ant_idle_left","order":7,"path":"sprites/ant_idle_left/ant_idle_left.yy",},
     {"name":"obj_sword","order":9,"path":"objects/obj_sword/obj_sword.yy",},
     {"name":"bug_walk_right_sword","order":22,"path":"sprites/bug_walk_right_sword/bug_walk_right_sword.yy",},
-    {"name":"Sprite11","order":15,"path":"sprites/Sprite11/Sprite11.yy",},
     {"name":"obj_test_block","order":11,"path":"objects/obj_test_block/obj_test_block.yy",},
     {"name":"obj_controller","order":5,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"ant_spawn_right","order":16,"path":"sprites/ant_spawn_right/ant_spawn_right.yy",},
