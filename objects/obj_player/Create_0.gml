@@ -13,7 +13,7 @@ spd = 5
 vsp = 0
 grounded = false
 grv = 0.5
-jspd = 10
+jspd = 10.5
 
 climbing = false; 
 
