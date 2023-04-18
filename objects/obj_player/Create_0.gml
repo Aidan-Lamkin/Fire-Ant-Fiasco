@@ -3,7 +3,8 @@
 
 inventory[2] = [noone, noone]
 sprite_index = bug_idle
-lives = 3; 
+lives = 3;
+hp = 10
 dir = 1
 jumping = false
 max_jumps = 2
@@ -14,7 +15,7 @@ vsp = 0
 grounded = false
 grv = 0.5
 jspd = 10.5
-
+hit = false
 climbing = false; 
 
 holding_sword = false;

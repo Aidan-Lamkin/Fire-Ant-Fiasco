@@ -12,6 +12,11 @@ var hmove = keyright - keyleft;
 
 hsp = spd * hmove;
 
+if(hp <=0){
+	instance_destroy(self,false)
+	game_restart()
+}
+
 //mvment
 if(grounded){
 	curr_jumps = 0;
@@ -28,7 +33,6 @@ if (place_meeting(x + hsp, y, obj_ground)) {
       hsp = 0;
 }
 
-x += hsp;
 
 
 //check vertical collision with a block
@@ -192,7 +196,18 @@ if(keyboard_check_pressed(ord("K")) && can_strike){
 	
 }
 
+if(hit){
+	
+	vsp = -5
+	if(dir > 0){
+		hsp = -10
+	}else{
+		hsp = 10
+	}
+}
+
 
 
 
 y += vsp
+x += hsp
