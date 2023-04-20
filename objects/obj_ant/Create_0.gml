@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-spd = 2;
+spd = 1.5;
 dir = 1;
 grv = 0.5
 vsp = 0
@@ -9,10 +9,10 @@ hit = false
 
 
 if(room == Room1){
-	hp = 8
+	hp = 4
 	dmg = 3
 } else {
-	hp = 12
+	hp = 8
 	dmg = 4
 }
 sprite_index = ant_idle_right;

@@ -24,72 +24,52 @@ if(grounded){
 
 vsp += grv;
 
-// Check horizontal collision with a block.
-if (place_meeting(x + hsp, y, obj_ground)) {
-      // I am going to hit a block on the next frame.
-      while (!place_meeting(x + sign(hsp), y, obj_ground)) {
-            x += sign(hsp);
-      }
-      hsp = 0;
-}
 
 
-
-//check vertical collision with a block
-if(place_meeting(x,y+vsp, obj_ground)) {
-	while(!place_meeting(x,y+sign(vsp),obj_ground)){
-		y+=sign(vsp)
-	}
-	vsp = 0
-	grounded = true
-}else{
-	grounded = false
-}
-
-if(!place_meeting(x,y-1,obj_ground)) {
-	if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
-		if(grounded){
-			if(holding_sword){
-				sprite_index = bug_walk_left_sword;
-			} else {
-				sprite_index = bug_walk_left
-			}
-			
-		}
-		dir = -1
-	}else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
-		if(grounded){
-			if(holding_sword){
-				sprite_index = bug_walk_right_sword;
-				
-			} else {
-				sprite_index = bug_walk_right
-			}
-		}
-		dir = 1
-	}else{
-		if(dir > 0){
-			if (holding_sword){
-				sprite_index = idle_sword_right
-				
-			} else {
-			  sprite_index = bug_idle
-				
-			}
-
+if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
+	if(grounded){
+		if(holding_sword){
+			sprite_index = bug_walk_left_sword;
 		} else {
-			if (holding_sword){
-				sprite_index = idle_sword_left
-				
-			} else {
-			  sprite_index = bug_idle_left
-				
-			}
+			sprite_index = bug_walk_left
+		}
 			
-			
+	}
+	dir = -1
+}else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
+	if(grounded){
+		if(holding_sword){
+			sprite_index = bug_walk_right_sword;
+				
+		} else {
+			sprite_index = bug_walk_right
 		}
 	}
-}else if (dir > 0){
+	dir = 1
+}else{
+	if(dir > 0){
+		if (holding_sword){
+			sprite_index = idle_sword_right
+				
+		} else {
+			sprite_index = bug_idle
+				
+		}
+
+	} else {
+		if (holding_sword){
+			sprite_index = idle_sword_left
+				
+		} else {
+			sprite_index = bug_idle_left
+				
+		}
+			
+			
+	}
+}
+
+/*else if (dir > 0){
 	if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
 		if(grounded){
 			sprite_index = bug_walk_left
@@ -105,6 +85,7 @@ if(!place_meeting(x,y-1,obj_ground)) {
 		}
 		
 	}
+
 } else {
 	if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
 		if(grounded){
@@ -114,7 +95,7 @@ if(!place_meeting(x,y-1,obj_ground)) {
 	}else{
 		if(!striking){
 			if(holding_sword){
-					sprite_index = idle_sword_right;
+				sprite_index = idle_sword_right;
 			} else {
 				sprite_index = bug_idle
 			}
@@ -122,7 +103,7 @@ if(!place_meeting(x,y-1,obj_ground)) {
 		
 	}
 }
-
+*/
 
 if ((curr_jumps < max_jumps) && jumping) {
 	if(curr_jumps == 1){
@@ -206,6 +187,37 @@ if(hit){
 	}
 }
 
+
+// Check horizontal collision with a block.
+if (place_meeting(x + hsp, y, obj_ground)) {
+      // I am going to hit a block on the next frame.
+      while (!place_meeting(x + (sign(hsp)), y, obj_ground)) {
+            x += sign(hsp);
+      }
+      hsp = 0;
+}
+
+
+
+//check vertical collision with a block
+if(place_meeting(x,y+vsp, obj_ground)) {
+	
+	while(!place_meeting(x,y+(sign(vsp)*(sprite_height/2-15)),obj_ground)){
+		y+=(sign(vsp))
+	}
+	vsp = 0
+	if(place_meeting(x,y+(sprite_height/2),obj_ground)){
+		grounded = true
+	}else{
+		grounded = false
+	}
+}else{
+	grounded = false
+}
+
+if(place_meeting(x,y+vsp, obj_ground) && (keyleft || keyright)){
+	
+}
 
 
 

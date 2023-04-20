@@ -4,7 +4,8 @@
 inventory[2] = [noone, noone]
 sprite_index = bug_idle
 lives = 3;
-hp = 10
+hp = 25
+max_hp = 25
 dir = 1
 jumping = false
 max_jumps = 2
