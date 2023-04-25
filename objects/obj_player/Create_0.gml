@@ -23,3 +23,5 @@ holding_sword = false;
 striking = false;
 can_strike = true;
 attack = 2; 
+
+has_speed = false; 

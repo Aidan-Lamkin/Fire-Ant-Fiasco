@@ -24,46 +24,38 @@ if(grounded){
 
 vsp += grv;
 
+if(has_speed){
+	spd = 10;
+}
 
 
 if(keyboard_check(vk_left) or keyboard_check(ord("A"))){
 	if(grounded){
-		if(holding_sword){
-			sprite_index = bug_walk_left_sword;
-		} else {
-			sprite_index = bug_walk_left
-		}
+		
+		sprite_index = bug_walk_left
+		
 			
 	}
 	dir = -1
 }else if (keyboard_check(vk_right) or keyboard_check(ord("D"))){
 	if(grounded){
-		if(holding_sword){
-			sprite_index = bug_walk_right_sword;
-				
-		} else {
-			sprite_index = bug_walk_right
-		}
+		
+		sprite_index = bug_walk_right
+		
 	}
 	dir = 1
 }else{
 	if(dir > 0){
-		if (holding_sword){
-			sprite_index = idle_sword_right
+	
+		sprite_index = bug_idle
 				
-		} else {
-			sprite_index = bug_idle
-				
-		}
+		
 
 	} else {
-		if (holding_sword){
-			sprite_index = idle_sword_left
+		
+		sprite_index = bug_idle_left
 				
-		} else {
-			sprite_index = bug_idle_left
-				
-		}
+		
 			
 			
 	}
@@ -161,14 +153,7 @@ if(keyboard_check_pressed(ord("K")) && can_strike){
 	can_strike = false
 	alarm[0] = 0.25*room_speed
 	
-	if (holding_sword && dir > 0) {
-		sprite_index = barbra_sword_attack_right; 
-		instance_create_layer(x+(sprite_width/2)-20, y+20, "Instances", obj_melee_attack)
-	
-	} else if(holding_sword){
-		sprite_index = barbra_sword_attack_left;
-		instance_create_layer(x-(sprite_width/2)+20, y+20, "Instances", obj_melee_attack)
-	}else if(dir > 0){
+	if(dir > 0){
 		instance_create_layer(x+(sprite_width/2)-20, y+20, "Instances", obj_melee_attack)
 	}else{
 		instance_create_layer(x-(sprite_width/2)+20, y+20, "Instances", obj_melee_attack)
@@ -194,6 +179,7 @@ if (place_meeting(x + hsp, y, obj_ground)) {
       while (!place_meeting(x + (sign(hsp)), y, obj_ground)) {
             x += sign(hsp);
       }
+	  
       hsp = 0;
 }
 

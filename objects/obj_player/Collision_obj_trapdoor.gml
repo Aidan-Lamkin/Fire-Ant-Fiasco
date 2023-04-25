@@ -1,5 +1,13 @@
 /// @description Insert description here
 
-room = SmallRoom1
+if(room == Room1){
+	room = SmallRoom1
+} else if(room = SmallRoom1){
+	room = Room2
+}
+
+
+
+
 
 
