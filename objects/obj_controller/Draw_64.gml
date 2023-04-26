@@ -13,6 +13,13 @@ if(room == Introduction){
 	draw_text(room_width/2,(room_height/2) + 50,"Hit K to attack.")
 	draw_text(room_width/2,(room_height/2) + 80,"Collect weapons in small room for power ups.")
 	draw_text(room_width/2, (room_height/2) + 110, "Hit enter to start!")
+} else if (room = EndRoom){
+	draw_set_font(fnt_end)
+	draw_set_color(c_black)
+	draw_set_halign(fa_middle)
+	draw_text(room_width/2,room_height/2 - 200,"Congradulations! You escaped!");
+	
+	
 }else{
 	if(instance_exists(obj_player)){
 		var pc = (obj_player.hp/obj_player.max_hp)*100
