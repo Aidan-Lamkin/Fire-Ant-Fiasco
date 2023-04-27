@@ -33,8 +33,6 @@ if(room == Introduction){
 		if(obj_player.has_speed){
 			draw_sprite_ext(soda_can, -1 ,window_get_width() - 80, window_get_height() - 85, 1, 1, 0, c_white, 1)
 		}
-		
-		
 	}
 	}
 	

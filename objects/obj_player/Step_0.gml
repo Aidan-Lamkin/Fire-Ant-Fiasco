@@ -102,6 +102,7 @@ if ((curr_jumps < max_jumps) && jumping) {
 		vsp = 0
 	}
 	curr_jumps += 1
+	audio_play_sound(snd_jump, 1, false);
 	
 	vsp -= (jspd);
 	
@@ -154,8 +155,10 @@ if(keyboard_check_pressed(ord("K")) && can_strike){
 	alarm[0] = 0.25*room_speed
 	
 	if(dir > 0){
+		effect_create_above(ef_ring,x+(sprite_width/2)+50,y,5,c_green)
 		instance_create_layer(x+(sprite_width/2)-20, y+20, "Instances", obj_melee_attack)
 	}else{
+		effect_create_above(ef_ring,x+(sprite_width/2)-150,y,10,c_green)
 		instance_create_layer(x-(sprite_width/2)+20, y+20, "Instances", obj_melee_attack)
 	}
 

@@ -25,3 +25,7 @@ can_strike = true;
 attack = 2; 
 
 has_speed = false; 
+if(room == Room2){
+	holding_sword = true;
+	has_speed = true;
+}

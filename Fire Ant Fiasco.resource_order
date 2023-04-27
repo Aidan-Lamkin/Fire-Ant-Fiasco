@@ -17,6 +17,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"fnt_end","order":1,"path":"fonts/fnt_end/fnt_end.yy",},
+    {"name":"Room2","order":5,"path":"rooms/Room2/Room2.yy",},
     {"name":"spr_splashscreen","order":15,"path":"sprites/spr_splashscreen/spr_splashscreen.yy",},
     {"name":"obj_ground","order":3,"path":"objects/obj_ground/obj_ground.yy",},
     {"name":"obj_ladder","order":10,"path":"objects/obj_ladder/obj_ladder.yy",},
@@ -39,6 +40,7 @@
     {"name":"sword","order":19,"path":"sprites/sword/sword.yy",},
     {"name":"obj_trapdoor_bottom","order":12,"path":"objects/obj_trapdoor_bottom/obj_trapdoor_bottom.yy",},
     {"name":"ant_idle_left","order":7,"path":"sprites/ant_idle_left/ant_idle_left.yy",},
+    {"name":"snd_music","order":2,"path":"sounds/snd_music/snd_music.yy",},
     {"name":"obj_soda_can","order":13,"path":"objects/obj_soda_can/obj_soda_can.yy",},
     {"name":"obj_sword","order":9,"path":"objects/obj_sword/obj_sword.yy",},
     {"name":"soda_can","order":31,"path":"sprites/soda_can/soda_can.yy",},
@@ -46,6 +48,7 @@
     {"name":"obj_controller","order":5,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"ant_spawn_right","order":16,"path":"sprites/ant_spawn_right/ant_spawn_right.yy",},
     {"name":"obj_ant_spawner","order":6,"path":"objects/obj_ant_spawner/obj_ant_spawner.yy",},
+    {"name":"snd_jump","order":1,"path":"sounds/snd_jump/snd_jump.yy",},
     {"name":"Sprite10","order":9,"path":"sprites/Sprite10/Sprite10.yy",},
     {"name":"ladder","order":20,"path":"sprites/ladder/ladder.yy",},
     {"name":"trapdoor_closed","order":10,"path":"sprites/trapdoor_closed/trapdoor_closed.yy",},
