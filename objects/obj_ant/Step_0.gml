@@ -54,16 +54,7 @@ if(obj_player.y > y){
 	}
 }
 
-// about to hit a wall
-if(place_meeting(x+hsp,y-10,obj_ground)){
-		//stop moving
-		if(dir > 0){
-			sprite_index = ant_idle_right
-		}else {
-			sprite_index = ant_idle_left
-		}
-		hsp = 0
-}
+
 
 
 if (place_meeting(x, y + vsp, obj_ground)) {
@@ -86,5 +77,17 @@ if(hit){
 	hsp = dir*-1*20
 	vsp =-5
 }
+
+// about to hit a wall
+if(place_meeting(x+hsp,y-10,obj_ground)){
+		//stop moving
+		if(dir > 0){
+			sprite_index = ant_idle_right
+		}else {
+			sprite_index = ant_idle_left
+		}
+		hsp = 0
+}
+
 x += hsp
 y+= vsp
